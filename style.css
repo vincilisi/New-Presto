@@ -64,8 +64,8 @@ h1, h2, h3, h4 {
 
 /* Header */
 .header {
-    height: 80rem;
-    background-image: url(./media/sfondo.png);
+    height: 100vh;
+    background-image: url(./media/sfondo.jpg);
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
