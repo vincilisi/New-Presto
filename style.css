@@ -1,9 +1,9 @@
 /* Cusctom Color */
 :root{
-    --Dark-Coral : rgb(211, 89, 68);
-    --Peach : rgb(253, 230, 176);
-    --Cadet : rgb(93, 114, 117);
-    --Yankees-Blue : rgb(29, 43, 54);
+    --Dark-Coral: rgb(211, 89, 68);
+    --Peach: rgb(253, 230, 176);
+    --Cadet: rgb(93, 114, 117);
+    --Yankees-Blue: rgb(29, 43, 54);
 }
 .bg-dark-coral{
     background: var(--Dark-Coral);
@@ -60,4 +60,45 @@ h1, h2, h3, h4 {
   flex: 1;
   text-align: center;
   font-size: 30px;
+}
+
+/* Header */
+.header {
+    height: 80rem;
+    background-image: url(./media/sfondo.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.btn-custom{
+    color: var(--Peach);
+    background-color: var(--Yankees-Blue);
+    border: 2px solid var(--Dark-Coral);
+    border-radius: 50px;
+    margin: 0px 15px;
+    transition: 0.5s;
+}
+.btn-custom:hover{
+    color: var(--Dark-Coral);
+    background-color: var(--Peach);
+    transform: scale(1.1);
+}
+
+.position{
+    position: relative;
+    top : -150px;
+}
+
+.col-custom{
+    padding: 10px;
+    border: 2px solid var(--Cadet);
+    cursor: pointer;
+    transition: 0.5s;
+}
+.col-custom:hover{
+    transform: scale(1.1);
+    background-color: var(--Peach);
+    color: var(--Dark-Coral);
+    border: 2px solid var(--Yankees-Blue);
 }
