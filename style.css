@@ -1,0 +1,49 @@
+/* Cusctom Color */
+:root{
+    --Dark-Coral : rgb(211, 89, 68);
+    --Peach : rgb(253, 230, 176);
+    --Cadet : rgb(93, 114, 117);
+    --Yankees-Blue : rgb(29, 43, 54);
+}
+.bg-dark-coral{
+    background: var(--Dark-Coral);
+}
+.bg-peach{
+    background: var(--Peach);
+}
+.bg-cadet{
+    background: var(--Cadet);
+}
+.bg-yankees-blue{
+    background: var(--Yankees-Blue);
+}
+
+.text-dark-coral{
+    color: var(--Dark-Coral);
+}
+.text-peach{
+    color: var(--Peach);
+}
+.text-cadet{
+    color: var(--Cadet);
+}
+.text-yankess-blue{
+    color: var(--Yankees-Blue);
+}
+/* Fine color */
+/* Custom Font */
+@font-face {
+    font-family: "Japan" ;
+    src: url(./font/TerexmalSundayPersonalUse-L315g.otf) format("opentype");
+}
+@font-face {
+    font-family: "Samurai" ;
+    src: url(./font/Keshiki-RpYoA.otf) format("opentype");
+}
+*{
+    font-family: "Japan";
+}
+h1, h2, h3, h4 {
+    font-family: "Samurai";
+}
+/* Fine Font */
