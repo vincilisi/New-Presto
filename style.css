@@ -49,11 +49,14 @@ h1, h2, h3, h4 {
 }
 /* Fine Font */
 
+body{
+    background: var(--Cadet);
+}
 
 .custom-item {
   display: flex;
   width: 100%;
-  justify-content: space-between;
+  justify-content: center;
 }
 
 .custom-item .nav-item {
@@ -101,4 +104,52 @@ h1, h2, h3, h4 {
     background-color: var(--Peach);
     color: var(--Dark-Coral);
     border: 2px solid var(--Yankees-Blue);
+}
+
+#katana{
+    transition: 0.5s;
+}
+
+/* numeri */
+
+.number{
+    font-size: 50px;
+    font-weight: 900;
+}
+
+/* Swiper */
+.card {
+    height: 300px;           /* Imposta l'altezza desiderata */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    box-sizing: border-box;
+    background-color: var(--Yankees-Blue);
+    border: 2px solid var(--Dark-Coral);
+    color: var(--Peach);
+    box-shadow: 0 10px 20px var(--Peach);
+
+}
+.swiper-container {
+    width: 60%;
+    max-width: 1000px;
+    height: 1000px;
+    position: relative;
+    margin: 0 auto;
+    padding-bottom: 60px; 
+}
+
+.swiper-wrapper {
+    align-items: center;
+}
+
+.swiper-pagination {
+    position: absolute !important;
+    left: 0;
+    right: 0;
+    bottom: 10px;
+    margin: 0 auto;
+    text-align: center;
+    z-index: 10;
 }

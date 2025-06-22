@@ -1,0 +1,92 @@
+[
+  {
+    "id": "te001",
+    "categoria": "Servizio da tè",
+    "nome": "Set da tè in ceramica nera",
+    "prezzo": 65.00,
+    "disponibile": true,
+    "descrizione": "Teiera e 4 tazze in ceramica smaltata opaca",
+    "immagine": "https://images.unsplash.com/photo-1635584762112-869905ae06f7"
+  },
+  {
+    "id": "te002",
+    "categoria": "Servizio da tè",
+    "nome": "Servizio Matcha in bambù",
+    "prezzo": 38.00,
+    "disponibile": true,
+    "descrizione": "Include chawan, chasen e chashaku per cerimonia del matcha",
+    "immagine": "https://images.unsplash.com/photo-1613145998382-674d3d236fa2"
+  },
+  {
+    "id": "te003",
+    "categoria": "Servizio da tè",
+    "nome": "Set da tè Sakura",
+    "prezzo": 72.00,
+    "disponibile": true,
+    "descrizione": "Teiera e tazze decorate con fiori di ciliegio",
+    "immagine": "https://images.unsplash.com/photo-1611244419812-1e0d0666b4e8"
+  },
+  {
+    "id": "te004",
+    "categoria": "Servizio da tè",
+    "nome": "Tazza Yunomi in gres",
+    "prezzo": 18.00,
+    "disponibile": true,
+    "descrizione": "Tazza singola artigianale in gres con smalto irregolare",
+    "immagine": "https://images.unsplash.com/photo-1595971012629-a8e24cf0e65f"
+  },
+  {
+    "id": "te005",
+    "categoria": "Servizio da tè",
+    "nome": "Set in porcellana bianca minimal",
+    "prezzo": 54.00,
+    "disponibile": true,
+    "descrizione": "Elegante servizio da tè da 5 pezzi con design minimalista",
+    "immagine": "https://images.unsplash.com/photo-1605874027020-3137b5c1772e"
+  },
+  {
+    "id": "te006",
+    "categoria": "Servizio da tè",
+    "nome": "Chawan Matcha iridescente",
+    "prezzo": 27.00,
+    "disponibile": true,
+    "descrizione": "Ciotola per matcha smaltata a effetto raku",
+    "immagine": "https://images.unsplash.com/photo-1623341216875-3c05c6345eaf"
+  },
+  {
+    "id": "te007",
+    "categoria": "Servizio da tè",
+    "nome": "Set con infusore in vetro borosilicato",
+    "prezzo": 35.00,
+    "disponibile": true,
+    "descrizione": "Teiera trasparente con filtro in acciaio e due tazze",
+    "immagine": "https://images.unsplash.com/photo-1624731318947-16f8870f2cdb"
+  },
+  {
+    "id": "te008",
+    "categoria": "Servizio da tè",
+    "nome": "Tetsubin in ghisa verde",
+    "prezzo": 89.00,
+    "disponibile": true,
+    "descrizione": "Teiera tradizionale in ghisa con interno smaltato",
+    "immagine": "https://images.unsplash.com/photo-1511988617509-a57c8a288659"
+  },
+  {
+    "id": "te009",
+    "categoria": "Servizio da tè",
+    "nome": "Set Shibui nero opaco",
+    "prezzo": 69.00,
+    "disponibile": true,
+    "descrizione": "Servizio da tè sobrio ed elegante per 2 persone",
+    "immagine": "https://images.unsplash.com/photo-1623425417834-fc18f934f29e"
+  },
+  {
+    "id": "te010",
+    "categoria": "Servizio da tè",
+    "nome": "Tazza Yunomi decorazione oro",
+    "prezzo": 22.00,
+    "disponibile": true,
+    "descrizione": "Yunomi con dettagli dorati per degustazioni raffinate",
+    "immagine": "https://images.unsplash.com/photo-1619983089984-1547b7e4d16f"
+  }
+]

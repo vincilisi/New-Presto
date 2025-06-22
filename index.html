@@ -8,75 +8,112 @@
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-LN+7fdVzj6u52u30Kp6M/trliBMCMKTyK833zpbD+pXdCLuTusPj697FH4R/5mcr" crossorigin="anonymous">
   <!-- Css -->
   <link rel="stylesheet" href="style.css">
+  <!-- SwiperCss -->
+   <link
+  rel="stylesheet"
+  href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+/>
 </head>
 <body>
   <!-- NavBar -->
-   <nav id="navbar" class="navbar navbar-expand-lg bg-cadet fixed-top custom">
-  <div class="container-fluid">
-    <a class="navbar-brand" href="index.html">
-      <img src="./media/pesci.svg" alt="Logo" width="100" height="100">
-    </a>
-    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-      <img src="./media/katana.svg" alt="katana" width="100" height="100">
-    </button>
-    <div class="collapse navbar-collapse" id="navbarSupportedContent">
-      <ul class="navbar-nav me-auto mb-2 mb-lg-0 custom-item">
-        <li class="nav-item">
-          <a class="nav-link text-dark-coral" href="#">Annunci</a>
-        </li>
-       <li class="nav-item">
-          <a class="nav-link text-dark-coral" href="#">Chi Siamo</a>
-       </li>
-      </ul>
-      <form class="d-flex" role="search">
-        <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search"/>
-        <button class=" bg-yankees-blue text-peach" type="submit">Search</button>
-      </form>
+  <nav id="navbar" class="navbar navbar-expand-lg bg-cadet fixed-top custom">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="index.html">
+        <img src="./media/logo.png" alt="Logo" width="150" height="150">
+      </a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <img id="katana" src="./media/katana.svg" alt="katana" width="100" height="100">
+      </button>
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav me-auto mb-2 mb-lg-0 custom-item">
+          <li class="nav-item">
+            <a class="nav-link text-dark-coral" href="#">Annunci</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link text-dark-coral" href="#">Chi Siamo</a>
+          </li>
+        </ul>
+        <form class="d-flex" role="search">
+          <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search"/>
+          <button class=" bg-yankees-blue text-peach" type="submit">Search</button>
+        </form>
+      </div>
     </div>
-  </div>
-</nav>
-<!-- Fine Nav -->
- <!-- Header -->
+  </nav>
+  <!-- Fine Nav -->
+  <!-- Header -->
   <header class="header">
     <div class="container-fluid">
-    <div class="row align-items-center vh-100">
-      <div class="col-12">
-        <h1 class="text-peach display-1 text-center">Presto.it</h1>
-        <div class="d-flex justify-content-center">
-          <button class="btn btn-custom">Click Here</button>
-          <button class="btn btn-custom">Click Heres</button>
+      <div class="row align-items-center vh-100">
+        <div class="col-12">
+          <h1 class="text-peach display-1 text-center">Maestri del Sol Levante</h1>
+          <div class="d-flex justify-content-center">
+            <button class="btn btn-custom">Click Here</button>
+            <button class="btn btn-custom">Click Heres</button>
+          </div>
         </div>
       </div>
     </div>
-  </div>
   </header>
-
+  <!-- Fine Header -->
   <!-- Position -->
-   <section class="container position">
-  <div class="row g-3">
-    <div class="col-12 col-md-4 bg-yankees-blue text-peach text-center d-flex flex-column align-items-center col-custom">
-      <img src="./icons/samurai.png" alt="icons-samurai" width="50px" height="50px">
-      <h2 class="my-3">Lorem ipsum.</h2>
-      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Labore vero aperiam id repellendus quo est inventore nemo iure! Provident animi quis ab dolorum repellat et fugit commodi sint excepturi vitae.</p>
+  <section class="container position">
+    <div class="row g-3">
+      <div class="col-12 col-md-4 bg-yankees-blue text-peach text-center d-flex flex-column align-items-center col-custom">
+        <img src="./icons/samurai.png" alt="icons-samurai" width="50px" height="50px">
+        <h2 class="my-3">Lorem ipsum.</h2>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Labore vero aperiam id repellendus quo est inventore nemo iure! Provident animi quis ab dolorum repellat et fugit commodi sint excepturi vitae.</p>
+      </div>
+      <div class="col-12 col-md-4 bg-yankees-blue text-peach text-center d-flex flex-column align-items-center col-custom">
+        <img src="./icons/fan.png" alt="icons-samurai" width="50px" height="50px">
+        <h2 class="my-3">Lorem ipsum.</h2>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Labore vero aperiam id repellendus quo est inventore nemo iure! Provident animi quis ab dolorum repellat et fugit commodi sint excepturi vitae.</p>
+      </div>
+      <div class="col-12 col-md-4 bg-yankees-blue text-peach text-center d-flex flex-column align-items-center col-custom">
+        <img src="./icons/katana (1).png" alt="icons-samurai" width="50px" height="50px">
+        <h2 class="my-3">Lorem ipsum.</h2>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Labore vero aperiam id repellendus quo est inventore nemo iure! Provident animi quis ab dolorum repellat et fugit commodi sint excepturi vitae.</p>
+      </div>
     </div>
-    <div class="col-12 col-md-4 bg-yankees-blue text-peach text-center d-flex flex-column align-items-center col-custom">
-      <img src="./icons/fan.png" alt="icons-samurai" width="50px" height="50px">
-      <h2 class="my-3">Lorem ipsum.</h2>
-      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Labore vero aperiam id repellendus quo est inventore nemo iure! Provident animi quis ab dolorum repellat et fugit commodi sint excepturi vitae.</p>
+  </section>
+  <!-- Fine Position -->
+  
+  <!-- Numeri Incrementali -->
+  <section class="container">
+    <div class="row">
+      <div class="col-12 col-md-6">
+        <img src="./media/samurai.jpg" alt="samurai" class="img-fluid">
+      </div>
+      <div class="col-12 col-md-6 text-center">
+        <h3 id="numerih3">Un po' di numeri</h3>
+
+        <p> <span class="number" id="first-number">0</span>  Prodotti Venduti</p>
+        <p> <span class="number" id="second-number" >0</span>  Clienti Soddisfatti</p>
+        <p> <span class="number" id="third-number">0</span>  Consegne Giornaliere</p>
+
+      </div>
     </div>
-    <div class="col-12 col-md-4 bg-yankees-blue text-peach text-center d-flex flex-column align-items-center col-custom">
-      <img src="./icons/katana (1).png" alt="icons-samurai" width="50px" height="50px">
-      <h2 class="my-3">Lorem ipsum.</h2>
-      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Labore vero aperiam id repellendus quo est inventore nemo iure! Provident animi quis ab dolorum repellat et fugit commodi sint excepturi vitae.</p>
+  </section>
+  <!-- Fine Numeri -->
+
+  <!-- Recensioni -->
+<div class="container d-flex justify-content-center my-5">
+  <div class="swiper-container mySwiper">
+    <div class="swiper-wrapper">
+      <!-- Le slide vengono aggiunte da JS -->
     </div>
   </div>
-</section>
-  <!-- Fine Position -->
+</div>
+   <!-- Fine Recensioni -->
 
-  <!-- Fine Header -->
   <!-- JS-Boot -->
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.bundle.min.js" integrity="sha384-ndDqU0Gzau9qJ1lfW4pNLlhNTkCfHzAVBReH9diLvGRem5+R9g2FzA8ZGN954O5Q" crossorigin="anonymous"></script>
+    <!-- SwiperJS -->
+   <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
   <!-- JS -->
   <script src="main.js"></script>
+  <!-- FontWesome -->
+   <script src="https://kit.fontawesome.com/2711f7e4df.js" crossorigin="anonymous"></script>
+
 </body>
 </html>
