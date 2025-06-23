@@ -1,92 +1,82 @@
 [
   {
-    "id": "te001",
     "categoria": "Servizio da tè",
-    "nome": "Set da tè in ceramica nera",
-    "prezzo": 65.00,
+    "nome": "TEANAGOO Matcha Whisk Set (Chasen + Chashaku + Bowl + Holder)",
+    "prezzo": 37.99,
     "disponibile": true,
-    "descrizione": "Teiera e 4 tazze in ceramica smaltata opaca",
-    "immagine": "https://images.unsplash.com/photo-1635584762112-869905ae06f7"
+    "descrizione": "Set completo per preparazione del matcha: frusta in bambù, cucchiaio, ciotola e supporto.",
+    "immagine": "https://m.media-amazon.com/images/I/817hdXMBcEL.__AC_SX300_SY300_QL70_ML2_.jpg"
   },
   {
-    "id": "te002",
     "categoria": "Servizio da tè",
-    "nome": "Servizio Matcha in bambù",
-    "prezzo": 38.00,
+    "nome": "Teabloom Teiera in vetro con infusore",
+    "prezzo": 21.14,
     "disponibile": true,
-    "descrizione": "Include chawan, chasen e chashaku per cerimonia del matcha",
-    "immagine": "https://images.unsplash.com/photo-1613145998382-674d3d236fa2"
+    "descrizione": "Teiera in vetro borosilicato da 1200 ml con infusore in acciaio inox, ideale per tè sfusi o fioriti.",
+    "immagine": "https://m.media-amazon.com/images/I/71ZuqK4MltL.__AC_SX300_SY300_QL70_ML2_.jpg"
   },
   {
-    "id": "te003",
     "categoria": "Servizio da tè",
-    "nome": "Set da tè Sakura",
-    "prezzo": 72.00,
+    "nome": "Teiera Orbegozo in ghisa",
+    "prezzo": 20.70,
     "disponibile": true,
-    "descrizione": "Teiera e tazze decorate con fiori di ciliegio",
-    "immagine": "https://images.unsplash.com/photo-1611244419812-1e0d0666b4e8"
+    "descrizione": "Teiera Tth 800 in ghisa da 800 ml, resistente e adatta alla cerimonia del tè.",
+    "immagine": "https://m.media-amazon.com/images/I/514EiLua2cL._AC_UL480_FMwebp_QL65_.jpg"
   },
   {
-    "id": "te004",
     "categoria": "Servizio da tè",
-    "nome": "Tazza Yunomi in gres",
-    "prezzo": 18.00,
+    "nome": "Tetsubin giapponese tradizionale",
+    "prezzo": 1850.94,
     "disponibile": true,
-    "descrizione": "Tazza singola artigianale in gres con smalto irregolare",
-    "immagine": "https://images.unsplash.com/photo-1595971012629-a8e24cf0e65f"
+    "descrizione": "Bollitore giapponese in ferro Teppo‑Guchi Takaoka, realizzato artigianalmente in Giappone.",
+    "immagine": "https://www.mia-teiera.it/wp-content/uploads/2022/07/product-image-1596132284-20220723-081712.jpg"
   },
   {
-    "id": "te005",
     "categoria": "Servizio da tè",
-    "nome": "Set in porcellana bianca minimal",
-    "prezzo": 54.00,
+    "nome": "Set matcha completo in bambù",
+    "prezzo": 26.99,
     "disponibile": true,
-    "descrizione": "Elegante servizio da tè da 5 pezzi con design minimalista",
-    "immagine": "https://images.unsplash.com/photo-1605874027020-3137b5c1772e"
+    "descrizione": "Set matcha Bamboo, include frusta, ciotola e cucchiaio per principianti.",
+    "immagine": "https://m.media-amazon.com/images/I/61g0g4NUlfL.__AC_SX300_SY300_QL70_ML2_.jpg"
   },
   {
-    "id": "te006",
     "categoria": "Servizio da tè",
-    "nome": "Chawan Matcha iridescente",
-    "prezzo": 27.00,
+    "nome": "Set cerimonia del tè giapponese – 5 pezzi",
+    "prezzo": 52.90,
     "disponibile": true,
-    "descrizione": "Ciotola per matcha smaltata a effetto raku",
-    "immagine": "https://images.unsplash.com/photo-1623341216875-3c05c6345eaf"
+    "descrizione": "Include ciotola chawan, frusta chasen, supporto, cucchiaio chashaku e panno per la pulizia.",
+    "immagine": "https://nipponboutique.fr/70286-large_default/set-teiera-e-4-tazze-in-ceramica-nera-e-blu-aomi.jpg"
   },
   {
-    "id": "te007",
     "categoria": "Servizio da tè",
-    "nome": "Set con infusore in vetro borosilicato",
-    "prezzo": 35.00,
+    "nome": "Ciotola Chawan artigianale in ceramica raku",
+    "prezzo": 45.00,
     "disponibile": true,
-    "descrizione": "Teiera trasparente con filtro in acciaio e due tazze",
-    "immagine": "https://images.unsplash.com/photo-1624731318947-16f8870f2cdb"
+    "descrizione": "Chawan realizzata a mano in stile Raku, ideale per la preparazione tradizionale del matcha.",
+    "immagine": "https://www.shoji-bau.com/shop/japan-antik/chawan/15.11.526/16001/image-thumb__16001__lightgallery/chawan-schale-4.1f59cce6.jpg"
   },
   {
-    "id": "te008",
     "categoria": "Servizio da tè",
-    "nome": "Tetsubin in ghisa verde",
-    "prezzo": 89.00,
+    "nome": "Set Matcha Premium – Giappone autentico",
+    "prezzo": 89.90,
     "disponibile": true,
-    "descrizione": "Teiera tradizionale in ghisa con interno smaltato",
-    "immagine": "https://images.unsplash.com/photo-1511988617509-a57c8a288659"
+    "descrizione": "Kit con accessori tradizionali giapponesi in bambù e ceramica, per esperti della cerimonia del tè.",
+    "immagine": "https://m.media-amazon.com/images/I/71kik2o9UbL._AC_SX679_.jpg"
   },
   {
-    "id": "te009",
     "categoria": "Servizio da tè",
-    "nome": "Set Shibui nero opaco",
-    "prezzo": 69.00,
+    "nome": "Chasen in bambù 120 punte",
+    "prezzo": 18.50,
     "disponibile": true,
-    "descrizione": "Servizio da tè sobrio ed elegante per 2 persone",
-    "immagine": "https://images.unsplash.com/photo-1623425417834-fc18f934f29e"
+    "descrizione": "Frusta tradizionale in bambù con 120 punte per ottenere una schiuma perfetta nel matcha.",
+    "immagine": "https://m.media-amazon.com/images/I/81OTmwRujlL._AC_SX679_.jpg"
   },
   {
-    "id": "te010",
     "categoria": "Servizio da tè",
-    "nome": "Tazza Yunomi decorazione oro",
-    "prezzo": 22.00,
+    "nome": "Set da tè giapponese con teiera in ceramica",
+    "prezzo": 67.80,
     "disponibile": true,
-    "descrizione": "Yunomi con dettagli dorati per degustazioni raffinate",
-    "immagine": "https://images.unsplash.com/photo-1619983089984-1547b7e4d16f"
+    "descrizione": "Set composto da teiera kyusu in ceramica e 4 tazze abbinate con decorazioni tradizionali.",
+    "immagine": "https://m.media-amazon.com/images/I/71M+mIlrlLL._AC_SY300_SX300_.jpg"
   }
 ]

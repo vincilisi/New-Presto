@@ -1,61 +1,71 @@
 [
   {
     "nome": "Blue Blade Katana",
-    "prezzo_usd": 189,
+    "prezzo": 189,
+    "categoria": "katana",
     "descrizione": "Katana in acciaio al carbonio 1045, lama blu, full tang, pronta al taglio",
     "immagine": "https://d3524jlyu2md0e.cloudfront.net/f8/16922910747529.webp?2000x3000"
   },
   {
     "nome": "Blood Red Blade Katana",
-    "prezzo_usd": 209,
+    "prezzo": 209,
+    "categoria": "katana",
     "descrizione": "Katana in acciaio 1045 con lama rossa e saya decorata, pronta al taglio",
     "immagine": "https://battlingblades.com/cdn/shop/products/1000KSS510.jpg?v=1667244440&width=1080g"
   },
   {
     "nome": "T10 Clay‑Tempered Katana",
-    "prezzo_usd": 475,
+    "prezzo": 475,
+    "categoria": "katana",
     "descrizione": "Katana temprata a base di argilla, acciaio T10, bo‑hi e hamon autentico",
     "immagine": "https://katanasforsale.com/wp-content/uploads/2016/06/Katanas-for-sale-063.jpg"
   },
   {
     "nome": "HanBon Dragon Katana",
-    "prezzo_usd": 106,
+    "prezzo": 106,
+    "categoria": "katana",
     "descrizione": "Katana Dragon in acciaio T10, full tang, incisioni drago, pronta al taglio",
     "immagine": "https://www.hanbonforge.com/image/cache/Hanbonforge/HBS9004/blue_dragon_katana_sword-2000x2000.jpg"
   },
   {
     "nome": "Musashi Shuriken Katana",
-    "prezzo_usd": 500,
+    "prezzo": 500,
+    "categoria": "katana",
     "descrizione": "Katana Musashi in acciaio 1060, clay‑tempered, con vero hamon e certificato",
     "immagine": "https://musashiswords.com/cdn/shop/files/SS1M60MBS02SHK_1.jpg?v=1744841444&width=823"
   },
   {
     "nome": "White Fire Katana",
-    "prezzo_usd": 139,
+    "prezzo": 139,
+    "categoria": "katana",
     "descrizione": "Katana in acciaio 65Mn temprato a mano, lama da 27″ con effetto blu-fiamma anodizzato",
     "immagine": "https://thesamuraiconnection.com/cdn/shop/products/IMG_1890_1024x1024.jpg?v=1660668447"
   },
   {
     "nome": "White Fire Katana",
-    "prezzo_usd": 139,
+    "prezzo": 139,
+    "categoria": "katana",
     "descrizione": "Katana in acciaio 65Mn temprato a mano, lama da 27″ con effetto blu‑fiamma anodizzato",
     "immagine": "https://blade-city.com/cdn/shop/files/blade-city-white-fire-hand-forge-katana-sword-35702867329181.progressive.jpg?v=1705621729"
   },
   {
     "nome": "Polypropylene Practice Katana",
-    "prezzo_usd": 29.99,
+    "prezzo": 29.99,
+    "categoria": "katana",
     "descrizione": "Katana in polipropilene, perfetta per kata, leggerissima e sicura",
     "immagine": "https://m.media-amazon.com/images/I/61MI4wRLISL._AC_SL1500_.jpg"
   },
   {
     "nome": "Hand‑forged T10 Katana with White Scabbard",
-    "prezzo_usd": 249,
+    "prezzo": 249,
+    "categoria": "katana",
     "descrizione": "Katana T10 temprata a base di argilla, saya bianca, vero hamon, full tang",
     "immagine": "https://d3524jlyu2md0e.cloudfront.net/53/16373488433411.webp?2000x3007"
   },
   {
     "nome": "Anime Aizen Zanpakutō",
-    "prezzo_usd": 188,
+    "prezzo": 188,
+    "categoria": "katana",
     "descrizione": "Replica katana di Aizen da 'Bleach', acciaio 1045, full tang, pronta al taglio",
     "immagine": "https://cdn11.bigcommerce.com/s-azatr4/images/stencil/1280x1280/products/22180/22935/26817__06725.1701481698.jpg?c=2/"
   }

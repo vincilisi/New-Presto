@@ -1,90 +1,80 @@
 [
   {
-    "id": "libro011",
-    "categoria": "Samurai e Guerra",
+    "categoria": "libri:stoira e cultura giapponese",
     "nome": "Samurai: Una Storia Illustrata. La Leggenda, le Armi e il Codice d'Onore",
-    "prezzo": "12,99 €",
+    "prezzo": 12.99,
     "disponibile": true,
     "descrizione": "Un'approfondita storia dei samurai, dalle origini fino all'era moderna.",
     "immagine": "https://m.media-amazon.com/images/I/51uiLoVXVSL._SY445_SX342_PQ9_.jpg"
   },
   {
-    "id": "libro012",
-    "categoria": "Storia del Giappone",
+    "categoria": "libri:stoira e cultura giapponese",
     "nome": "La Storia del Giappone Feudale: Samurai, Shogun e Tradizioni",
-    "prezzo": "21,83 €",
+    "prezzo": 21.83,
     "disponibile": true,
     "descrizione": "Esamina il periodo feudale del Giappone, con un focus sui clan samurai e le guerre civili.",
     "immagine": "https://m.media-amazon.com/images/I/41Kokf2fCTL._SY445_SX342_PQ9_.jpg"
   },
   {
-    "id": "libro013",
-    "categoria": "Samurai e Guerra",
+   "categoria": "libri:stoira e cultura giapponese",
     "nome": "La Mente del Samurai. Il Codice del Bushido",
-    "prezzo": "19,00 €",
+    "prezzo": 19.00,
     "disponibile": true,
     "descrizione": "Analisi del codice etico dei samurai e il suo impatto sulla cultura giapponese.",
     "immagine": "https://m.media-amazon.com/images/I/4118yJARLxL._SY445_SX342_PQ9_.jpg"
   },
   {
-    "id": "libro014",
-    "categoria": "Cultura Giapponese",
+   "categoria": "libri:stoira e cultura giapponese",
     "nome": "Spade e Armi Giapponesi dei Trenta Più Gloriosi Samurai",
-    "prezzo": "45,00 €",
+    "prezzo": 45.00,
     "disponibile": true,
     "descrizione": "Dettagliata descrizione delle armi, armature e tattiche dei guerrieri giapponesi.",
     "immagine": "https://m.media-amazon.com/images/I/41HLSgFrrZL._SX342_SY445_PQ9_.jpg"
   },
   {
-    "id": "libro015",
-    "categoria": "Storia del Giappone",
+    "categoria": "libri:stoira e cultura giapponese",
     "nome": "Storia dei Samurai. Cronache dal Periodo degli Stati Combattenti",
-    "prezzo": "20,89 €",
+    "prezzo": 20.89,
     "disponibile": true,
     "descrizione": "Studio delle lotte di potere e dei conflitti durante il periodo Sengoku.",
     "immagine": "https://m.media-amazon.com/images/I/71eR35kwaYL._AC_UY327_FMwebp_QL65_.jpg"
   },
   {
-    "id": "libro016",
-    "categoria": "Samurai e Guerra",
+    "categoria": "libri:stoira e cultura giapponese",
     "nome": "Musashi 1: La Leggenda del Samurai",
-    "prezzo": "20,50 €",
+    "prezzo": 20.50,
     "disponibile": true,
     "descrizione": "Biografia e filosofia del celebre spadaccino e samurai Miyamoto Musashi.",
     "immagine": "https://m.media-amazon.com/images/I/71qCkcO0HBL._AC_UY327_FMwebp_QL65_.jpg"
   },
   {
-    "id": "libro017",
-    "categoria": "Cultura Giapponese",
+   "categoria": "libri:stoira e cultura giapponese",
     "nome": "Giappone Perduto. Viaggio di un Italiano nell’Ultimo Giappone Feudale",
-    "prezzo": "21,83 €",
+    "prezzo": 21.83,
     "disponibile": true,
     "descrizione": "Un viaggio nella vita e nelle tradizioni dei samurai oltre la guerra.",
     "immagine": "https://m.media-amazon.com/images/I/61vweJP6GxL._AC_UY327_FMwebp_QL65_.jpg"
   },
   {
-    "id": "libro018",
-    "categoria": "Storia del Giappone",
+    "categoria": "libri:stoira e cultura giapponese",
     "nome": "Le Armature dei Samurai",
-    "prezzo": "32,30 €",
+    "prezzo": 32.30,
     "disponibile": true,
     "descrizione": "Dettagliata descrizione delle armature usate dai samurai.",
     "immagine": "https://m.media-amazon.com/images/I/61zb99i1j9L._AC_UY327_FMwebp_QL65_.jpg"
   },
   {
-    "id": "libro019",
-    "categoria": "Samurai e Guerra",
+    "categoria": "libri:stoira e cultura giapponese",
     "nome": "La Grande Via del Samurai",
-    "prezzo": "19,00 €",
+    "prezzo": 19.00,
     "disponibile": true,
     "descrizione": "Descrizione delle strategie e filosofia dei samurai nei campi di battaglia.",
     "immagine": "https://m.media-amazon.com/images/I/71RRY9mNa2L._AC_UY327_FMwebp_QL65_.jpg"
   },
   {
-    "id": "libro020",
-    "categoria": "Cultura Giapponese",
+    "categoria": "libri:stoira e cultura giapponese",
     "nome": "Spade giapponesi. Arte e segreti di un grande maestro",
-    "prezzo": "18,75 €",
+    "prezzo": 18.75,
     "disponibile": true,
     "descrizione": "Storia e significato della katana nella cultura samurai e giapponese.",
     "immagine": "https://m.media-amazon.com/images/I/716lYU-k6hL._SY425_.jpg"

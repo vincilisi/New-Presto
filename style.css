@@ -53,6 +53,10 @@ body{
     background: var(--Cadet);
 }
 
+.customli:hover{
+    color: var(--Dark-Coral) !important;
+}
+
 .custom-item {
   display: flex;
   width: 100%;
@@ -119,7 +123,7 @@ body{
 
 /* Swiper */
 .card {
-    height: 300px;           /* Imposta l'altezza desiderata */
+    height: 450px;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -129,15 +133,49 @@ body{
     border: 2px solid var(--Dark-Coral);
     color: var(--Peach);
     box-shadow: 0 10px 20px var(--Peach);
-
+    width: 100%;
+    max-width: 500px;
+    margin: 0 auto;
 }
+
 .swiper-container {
     width: 60%;
     max-width: 1000px;
     height: 1000px;
     position: relative;
     margin: 0 auto;
-    padding-bottom: 60px; 
+    padding-bottom: 60px;
+}
+
+/* Responsive: tablet */
+@media (max-width: 900px) {
+    .swiper-container {
+        width: 90%;
+        height: 600px;
+        max-width: 100%;
+    }
+    .card {
+        height: 100%;
+        max-width: 100%;
+        font-size: 20px;
+    }
+}
+
+/* Responsive: smartphone */
+@media (max-width: 360px) {
+    .swiper-container {
+        width: 100%;
+        min-height: 400px;
+        height: auto;
+        padding-bottom: 40px;
+    }
+    .card {
+        min-height: 350px;
+        height: auto ;
+        max-width: 20%;
+        font-size: 16px;
+        padding: 10px;
+    }
 }
 
 .swiper-wrapper {
@@ -152,4 +190,61 @@ body{
     margin: 0 auto;
     text-align: center;
     z-index: 10;
+}
+
+/* Annunci */
+
+.accordion-item, .accordion-button{
+    background-color: var(--Cadet);
+    color: var(--Peach);
+}
+
+.accordion-button:not(.collapsed){
+    color: var(--Dark-Coral);
+    background-color: var(--Cadet);
+    box-shadow: none;
+}
+
+.accordion-button:focus{
+    box-shadow: none;
+}
+.bs-accordion-btn-active-icon{
+    background-color: var(--Dark-Coral);
+}
+
+.card-custom {
+    height: 300px;
+    width: 50%;
+    border: 2px solid var(--Peach);
+    border-radius: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    margin-bottom: px;
+    background: var(--Yankees-Blue);
+    color: var(--Peach);
+    padding: 15px 10px;
+    box-sizing: border-box;
+    overflow: hidden;
+}
+
+.card-custom h4,
+.card-custom p {
+    font-size: 18px; 
+    margin: 5px 0 0 0; 
+    text-align: center;
+    word-break: break-word;
+    line-height: 1.2;
+    width: 100%;
+    padding: 0 5px;
+}
+
+.card-custom img {
+    max-width: 90%;
+    max-height: 100px;
+    object-fit: contain;
+    border-radius: 10px;
+    margin-top: 5px;
+    margin-bottom: 5px;
 }

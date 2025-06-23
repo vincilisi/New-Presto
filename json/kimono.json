@@ -1,70 +1,73 @@
-{
-  "kimono": {
-    "maschili": [
+[
       {
         "nome": "Yukata Aoi Kasuri",
         "prezzo": 146.00,
+        "categoria": "kimono-maschili",
         "descrizione": "Kimono estivo in cotone con motivo tradizionale Aoi Kasuri, ideale per eventi informali.",
         "immagine": "https://static.wixstatic.com/media/89fb17_48bfff3bd83d49e3b68508d99e00f0dd~mv2.webp"
       },
       {
         "nome": "Shinshū īda tsumugi",
         "prezzo": 246.00,
+         "categoria": "kimono-maschili",
         "descrizione": "Kimono formale in seta tsumugi, tessuto tradizionale giapponese, adatto a cerimonie.",
         "immagine": "https://i.etsystatic.com/12173691/r/il/10c69e/5699419191/il_fullxfull.5699419191_2rmu.jpg"
       },
       {
         "nome": "Tsumugi Sutōngurē",
         "prezzo": 210.00,
+         "categoria": "kimono-maschili",
         "descrizione": "Kimono elegante in seta tsumugi, con design sobrio e raffinato.",
         "immagine": "https://static.wixstatic.com/media/89fb17_2ea059102ca94ceda69a9443881c6180~mv2.webp"
       },
       {
         "nome": "Yukata Shima Moyo",
         "prezzo": 110.00,
+         "categoria": "kimono-maschili",
         "descrizione": "Kimono estivo in cotone con motivo a strisce, perfetto per eventi casual.",
         "immagine": "https://static.wixstatic.com/media/89fb17_0c481719308a40b7a4494f919c35fdff~mv2.webp/v1/fill/w_550,h_550,al_c,q_80,usm_0.66_1.00_0.01,enc_avif,quality_auto/89fb17_0c481719308a40b7a4494f919c35fdff~mv2.webp"
-      }
-    ],
-    "femminili": [
+      },
       {
         "nome": "Furisode Senmen nagashi",
         "prezzo": 365.00,
+         "categoria": "kimono-femminili",
         "descrizione": "Kimono formale in seta con motivo floreale, adatto a cerimonie tradizionali.",
         "immagine": "https://static.wixstatic.com/media/89fb17_ffe0d870bea74f48b73ace279a15890d~mv2.webp/v1/fill/w_550,h_550,al_c,q_80,usm_0.66_1.00_0.01,enc_avif,quality_auto/89fb17_ffe0d870bea74f48b73ace279a15890d~mv2.webp"
       },
       {
         "nome": "Houmongi Yatsuhashi Ryūsui-gara",
         "prezzo": 264.00,
+         "categoria": "kimono-femminili",
         "descrizione": "Kimono elegante in seta con motivo a ponti e fiumi, ideale per eventi formali.",
-        "immagine": "https://www.kimonoflaminia.com/wp-content/uploads/2021/07/Haori_Kimono_originale_giapponese_con_elegante_motivo_di_paesaggio_01-1.jpga"
+        "immagine": "https://static.wixstatic.com/media/89fb17_84cc8faea870421c8159d69634bdf825~mv2.jpg/v1/fill/w_980,h_980,al_c,q_85,usm_0.66_1.00_0.01,enc_auto/89fb17_84cc8faea870421c8159d69634bdf825~mv2.jpg"
       },
       {
         "nome": "Irotomesode Nihon no fūkei",
         "prezzo": 245.00,
+         "categoria": "kimono-femminili",
         "descrizione": "Kimono formale in seta con paesaggio giapponese stilizzato, adatto a cerimonie.",
         "immagine": "https://static.wixstatic.com/media/89fb17_a9cdd381acb64bb8bb2bea5b7138ca34~mv2.png/v1/fill/w_560%2Ch_560%2Cal_c%2Cq_85%2Cusm_0.66_1.00_0.01%2Cenc_avif%2Cquality_auto/89fb17_a9cdd381acb64bb8bb2bea5b7138ca34~mv2.png"
       },
       {
         "nome": "Yukata Mujina Kikumon",
         "prezzo": 120.00,
+         "categoria": "kimono-femminili",
         "descrizione": "Kimono estivo in cotone con motivo floreale, perfetto per eventi casual.",
         "immagine": "https://static.wixstatic.com/media/89fb17_e8eeeaec04ec427ba72d212a055895aa~mv2.webp/v1/fill/w_550,h_550,al_c,q_80,usm_0.66_1.00_0.01,enc_avif,quality_auto/89fb17_e8eeeaec04ec427ba72d212a055895aa~mv2.webp"
-      }
-    ],
-    "haori": [
+      },
       {
         "nome": "Haori con motivo floreale damascato",
         "prezzo": 169.00,
+         "categoria": "kimono-haori",
         "descrizione": "Haori in seta con raffinato motivo floreale damascato, appartenente al primo 900.",
         "immagine": "https://www.kimonoflaminia.com/wp-content/uploads/2024/08/haori_kimono_lungo_originale_giapponese_con-raffinato_motivo_floreale_damascato_01.jpg"
       },
       {
         "nome": "Haori con motivo di campanule e foglie di gelso",
         "prezzo": 110.00,
+         "categoria": "kimono-haori",
         "descrizione": "Haori in seta con elegante motivo di campanule e foglie di gelso, adatto a diverse occasioni.",
         "immagine": "https://www.kimonoflaminia.com/wp-content/uploads/2019/10/haori_kimono_giapponese_con_raffinato_motivo_di_foglie_di_gelso_01.jpg"
       }
-    ]
-  }
-}
+]
+
