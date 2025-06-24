@@ -51,6 +51,7 @@ h1, h2, h3, h4 {
 
 body{
     background: var(--Cadet);
+    padding: auto;
 }
 
 .customli:hover{
@@ -67,6 +68,11 @@ body{
   flex: 1;
   text-align: center;
   font-size: 30px;
+}
+
+.cart-link {
+  cursor: pointer;
+  text-decoration: none;
 }
 
 /* Header */
@@ -247,4 +253,21 @@ body{
     border-radius: 10px;
     margin-top: 5px;
     margin-bottom: 5px;
+}
+
+.accordin-custom{
+    margin-top: 100px;
+}
+
+.dropdown-item{
+    color: var(--Peach);
+}
+
+.dropdown-item:focus, .dropdown-item:hover {
+    color: var(--Dark-Coral);
+    background-color: var(--Peach);
+}
+.annunci-body{
+    padding-top: 300px; /* esempio per evitare che la navbar copra il contenuto */
+    background: var(--Cadet);
 }

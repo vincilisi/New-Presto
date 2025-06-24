@@ -16,7 +16,7 @@
 </head>
 <body>
   <!-- NavBar -->
-  <nav id="navbar" class="navbar navbar-expand-lg bg-cadet fixed-top custom">
+  <nav id="navbar" class="navbar navbar-expand-lg bg-cadet custom fixed-top">
     <div class="container-fluid">
       <a class="navbar-brand" href="index.html">
         <img src="./media/logo.png" alt="Logo" width="150" height="150">
@@ -26,16 +26,27 @@
       </button>
       <div class="collapse navbar-collapse" id="navbarSupportedContent">
         <ul class="navbar-nav me-auto mb-2 mb-lg-0 custom-item">
-          <li class="nav-item">
-            <a class="nav-link text-dark customli" href="./annunci.html">Annunci</a>
-          </li>
+          <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle customli" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+            Annunci
+          </a>
+          <ul class="dropdown-menu bg-cadet">
+             <li><a class="dropdown-item" href="./annunci.html">Annunci</a></li>
+            <li><a class="dropdown-item" href="#">Katane</a></li>
+            <li><a class="dropdown-item" href="#">Kimono</a></li>
+            <li><a class="dropdown-item" href="#">libri</a></li>
+            <li><a class="dropdown-item" href="#">Servizi da the</a></li>
+            <li><a class="dropdown-item" href="#">Servizio da sushi</a></li>
+          </ul>
+        </li>
           <li class="nav-item">
             <a class="nav-link text-dark customli" href="#">Chi Siamo</a>
           </li>
         </ul>
-        <form class="d-flex" role="search">
-          <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search"/>
-          <button class=" bg-yankees-blue text-peach" type="submit">Search</button>
+        <form class="d-flex" role="cart">
+         <a href="#" class="cart-link">
+    <i class="fa-solid fa-cart-shopping fa-2x text-dark-coral"></i>
+  </a>
         </form>
       </div>
     </div>

@@ -51,6 +51,7 @@ Promise.all(
   files.map(file => fetch(`./json/${file}`).then(res => res.json()))
 ).then(results => {
     allData = results.flat();
+    allData.sort((a,b) => a.prezzo - b.prezzo);
 
     let radiowrapper = document.querySelector(`#radiowrapper`);
     let cardwrapper = document.querySelector(`#cardwrapper`);
@@ -107,6 +108,7 @@ Promise.all(
 
 
     let priceInput = document.querySelector(`#priceInput`);
+    let priceValue = document.querySelector(`#priceValue`);
 
     function SetRanger(){
 
@@ -114,9 +116,34 @@ Promise.all(
     price.sort((a,b)=>a - b); 
     let maxPrice =Math.ceil( price.pop());
     priceInput.max = maxPrice;
+    priceInput.value = maxPrice;
+    priceValue.innerHTML = maxPrice;
     }
 
     SetRanger();
+
+    function FilterByPrice(){
+        let filtered = allData.filter((annuncio) => annuncio.prezzo <= priceInput.value);
+        showcards(filtered)
+        
+    }
+    priceInput.addEventListener(`input`, ()=>{
+        priceValue.innerHTML = priceInput.value
+        FilterByPrice();
+    });
+
+
+    let textInput = document.querySelector(`#textInput`);
+    function FilterByWord(parola){
+    let filtered = allData.filter((annuncio) =>
+        annuncio.nome.toLowerCase().includes(parola.toLowerCase())
+    );
+    showcards(filtered);
+}
+
+textInput.addEventListener(`input`, ()=>{
+    FilterByWord(textInput.value)
+});
 
 });
 
