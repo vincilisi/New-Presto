@@ -116,7 +116,6 @@ img {
 .custom {
     height: auto;
     min-height: 160px;
-    width: 100%;
 }
 
 .btn-custom, .btn-custom2 { /* Unificato stili comuni per i bottoni */
@@ -204,19 +203,21 @@ img {
     border: 2px solid var(--Dark-Coral);
     color: var(--Peach);
     box-shadow: 0 0.625rem 1.25rem var(--Peach); /* 10px 20px convertito in rem */
-    width: 100%;
-    max-width: 500px;
+    width: 100%; /* Occupare tutta la larghezza disponibile */
+    max-width: 500px; /* Limite massimo per evitare che le card siano troppo larghe */
     margin: 0 auto;
     padding: 1rem; /* Aggiunto padding per il contenuto della card */
 }
 
 .swiper-container {
-    width: 60%;
-    max-width: 1000px;
-    height: 1000px; /* Mantieni se è l'altezza richiesta da Swiper per inizializzare */
+   width: 100%; /* Occupare tutta la larghezza disponibile dal suo genitore */
+    max-width: 1400px; /* <--- **Aumenta questo valore!** Prova 1400px, 1600px, o anche di più se vuoi. */
+    min-height: 100vh;
+  height: auto;
+  overflow: hidden;
     position: relative;
-    margin: 0 auto;
-    padding-bottom: 3.75rem; /* 60px convertito in rem */
+    margin: 0 auto; /* Centra il contenitore se è più piccolo di 100% */
+    padding-bottom: 3.75rem;
 }
 
 /* Responsive: tablet (tra 900px e 601px) */
@@ -303,8 +304,11 @@ img {
 }
 
 
+
 .swiper-wrapper {
     align-items: center;
+    display: flex;
+    flex-direction: row; /* Assicura che le card siano in fila */
 }
 
 .swiper-pagination {
@@ -315,6 +319,14 @@ img {
     margin: 0 auto;
     text-align: center;
     z-index: 10;
+}
+
+.swiper-slide {
+  width: 100% !important;
+  max-width: none !important;
+  flex-shrink: 0;
+  display: flex;
+  justify-content: center;
 }
 
 /* Annunci */
