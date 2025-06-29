@@ -131,6 +131,27 @@ body{
     font-weight: 900;
 }
 
+#cart-display{
+    display: none;
+    position: fixed;
+    top: 70px;
+    right: 20px;
+    width: 300px;
+    background-color: var(--Peach);
+    border: 2px solid var(--Dark-Coral);
+    border-radius: 8px;
+    box-shadow: 2px 8 px var(--Yankees-Blue);
+    z-index: 9999;
+    padding: 16px;
+
+}
+
+#cart-list{
+    list-style: none;
+    padding: 0px;
+    margin: 0px;
+}
+
 /* Swiper */
 .card {
     height: 450px;
@@ -230,7 +251,7 @@ body{
 }
 
 .card-custom {
-    height: 300px;
+    height: 350px;
     width: 300px;
     border: 2px solid var(--Peach);
     border-radius: 20px;
@@ -668,3 +689,34 @@ body{
 .footer-credit span:hover {
   color: var(--Dark-Coral);
 }
+
+/* Carrello */
+.body-carrello {
+            background: linear-gradient(135deg, var(--Yankees-Blue), var(--Cadet));
+            min-height: 100vh;
+            color: var(--Peach);
+        }
+        .coming-container {
+            background: var(--Yankees-Blue);
+            border-radius: 1rem;
+            box-shadow: 0 4px 24px rgba(0,0,0,0.18);
+            border: 2px solid var(--Dark-Coral);
+            padding: 3rem 2rem;
+            text-align: center;
+            margin-top: 250px;
+        }
+        .sun {
+            font-size: 4rem;
+            color: var(--Peach);
+            text-shadow: 2px 2px 8px var(--Dark-Coral);
+            margin-bottom: 1rem;
+        }
+        .h1-carrello {
+            color: var(--Dark-Coral);
+            letter-spacing: 2px;
+            margin-bottom: 1rem;
+        }
+        .p-carrello {
+            color: var(--Peach);
+            font-size: 1.2rem;
+        }
