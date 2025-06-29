@@ -1,78 +1,95 @@
+/* Reset di base per un miglior controllo del layout */
+*,
+*::before,
+*::after {
+    box-sizing: border-box; /* Assicura che padding e border siano inclusi nella larghezza/altezza */
+}
+
 /* Cusctom Color */
-:root{
+:root {
     --Dark-Coral: rgb(211, 89, 68);
     --Peach: rgb(253, 230, 176);
     --Cadet: rgb(93, 114, 117);
     --Yankees-Blue: rgb(29, 43, 54);
 }
-.bg-dark-coral{
-    background: var(--Dark-Coral);
-}
-.bg-peach{
-    background: var(--Peach);
-}
-.bg-cadet{
-    background: var(--Cadet);
-}
-.bg-yankees-blue{
-    background: var(--Yankees-Blue);
-}
 
-.text-dark-coral{
-    color: var(--Dark-Coral);
-}
-.text-peach{
-    color: var(--Peach);
-}
-.text-cadet{
-    color: var(--Cadet);
-}
-.text-yankess-blue{
-    color: var(--Yankees-Blue);
-}
+.bg-dark-coral { background: var(--Dark-Coral); }
+.bg-peach { background: var(--Peach); }
+.bg-cadet { background: var(--Cadet); }
+.bg-yankees-blue { background: var(--Yankees-Blue); }
+
+.text-dark-coral { color: var(--Dark-Coral); }
+.text-peach { color: var(--Peach); }
+.text-cadet { color: var(--Cadet); }
+.text-yankess-blue { color: var(--Yankees-Blue); }
 /* Fine color */
+
 /* Custom Font */
 @font-face {
-    font-family: "Japan" ;
+    font-family: "Japan";
     src: url(./font/TerexmalSundayPersonalUse-L315g.otf) format("opentype");
 }
 @font-face {
-    font-family: "Samurai" ;
+    font-family: "Samurai";
     src: url(./font/Keshiki-RpYoA.otf) format("opentype");
 }
-*{
-    font-family: "Japan";
-    font-size: 1.25rem;
+
+/* Font size base più gestibile con unità rem */
+html {
+    font-size: 16px; /* Base per tutti i rem, generalmente 1rem = 16px */
 }
-h1, h2, h3, h4 {
-    font-family: "Samurai";
+
+body {
+    font-family: "Japan", sans-serif; /* Fallback font */
+    font-size: 1.125rem; /* ~18px, più piccolo della tua impostazione originale per default */
+    background: var(--Cadet);
+    padding: 0; /* Rimosso padding: auto; che non ha effetto */
+    margin: 0; /* Assicura che non ci sia margine predefinito */
+    overflow-x: hidden; /* Previene lo scroll orizzontale non voluto */
 }
+
+h1, h2, h3, h4, h5, h6 { /* Aggiunto tutti i tag heading */
+    font-family: "Samurai", cursive; /* Fallback font */
+    margin-top: 0;
+    margin-bottom: 0.5em; /* Spazio sotto i titoli */
+    line-height: 1.2;
+}
+
+h1 { font-size: 3.5rem; } /* ~56px */
+h2 { font-size: 2.5rem; } /* ~40px */
+h3 { font-size: 1.75rem; } /* ~28px */
+h4 { font-size: 1.5rem; } /* ~24px */
 /* Fine Font */
 
-body{
-    background: var(--Cadet);
-    padding: auto;
+/* Immagini fluide per default */
+img {
+    max-width: 100%;
+    height: auto;
+    display: block; /* Rimuove lo spazio extra sotto le immagini in linea */
 }
 
-.customli:hover{
+.customli:hover {
     color: var(--Dark-Coral) !important;
 }
 
 .custom-item {
-  display: flex;
-  width: 100%;
-  justify-content: center;
+    display: flex;
+    flex-wrap: wrap; /* Permette agli elementi di andare a capo */
+    width: 100%;
+    justify-content: center;
+    gap: 1rem; /* Spazio tra gli elementi */
 }
 
 .custom-item .nav-item {
-  flex: 1;
-  text-align: center;
-  font-size: 30px;
+    flex: 1;
+    min-width: 100px; /* Larghezza minima per l'elemento nav */
+    text-align: center;
+    font-size: 1.5rem; /* ~24px, ridotto rispetto ai 30px originali */
 }
 
 .cart-link {
-  cursor: pointer;
-  text-decoration: none;
+    cursor: pointer;
+    text-decoration: none;
 }
 
 /* Header */
@@ -82,79 +99,102 @@ body{
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
+    display: flex; /* Utilizzo flexbox per centrare il contenuto nell'header */
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    color: var(--Peach); /* Assicurati che il testo sia leggibile */
+    padding: 1rem; /* Padding generale per l'header */
 }
 
-.custom{
-    height: 160px;
+.header .container { /* Se usi un container Bootstrap all'interno dell'header */
+    width: 100%;
+    max-width: 1200px;
+    padding: 0 15px;
 }
 
-.btn-custom{
+.custom {
+    height: auto;
+    min-height: 160px;
+    width: 100%;
+}
+
+.btn-custom, .btn-custom2 { /* Unificato stili comuni per i bottoni */
     color: var(--Peach);
     background-color: var(--Yankees-Blue);
     border: 2px solid var(--Dark-Coral);
     border-radius: 50px;
-    margin: 0px 15px;
+    margin: 0.5rem; /* Margine relativo */
+    padding: 0.75rem 1.5rem; /* Padding reattivo */
     transition: 0.5s;
+    text-decoration: none; /* Per assicurare che non abbiano sottolineature se sono link */
+    display: inline-block; /* Per applicare margini e padding correttamente */
+    font-size: 1.125rem; /* Dimensione font per i bottoni */
 }
-.btn-custom:hover{
+.btn-custom:hover, .btn-custom2:hover {
     color: var(--Dark-Coral);
     background-color: var(--Peach);
     transform: scale(1.1);
 }
 
-.position{
+.position {
     position: relative;
-    top : -150px;
+    top: -9.375rem; /* -150px convertito in rem */
 }
 
-.col-custom{
-    padding: 10px;
+.col-custom {
+    padding: 0.625rem; /* 10px convertito in rem */
     border: 2px solid var(--Cadet);
     cursor: pointer;
     transition: 0.5s;
+    flex: 1 1 300px; /* Flex shorthand: grow, shrink, base width. Permette di andare a capo */
+    max-width: 100%; /* Assicura che non superi il 100% della larghezza del genitore */
 }
-.col-custom:hover{
+.col-custom:hover {
     transform: scale(1.1);
     background-color: var(--Peach);
     color: var(--Dark-Coral);
     border: 2px solid var(--Yankees-Blue);
 }
 
-#katana{
+#katana {
     transition: 0.5s;
+    max-width: 100%; /* Assicura che l'immagine si ridimensioni */
+    height: auto;
 }
 
 /* numeri */
-
-.number{
-    font-size: 50px;
+.number {
+    font-size: 3.125rem; /* 50px convertito in rem */
     font-weight: 900;
 }
 
-#cart-display{
+#cart-display {
     display: none;
     position: fixed;
-    top: 70px;
-    right: 20px;
-    width: 300px;
+    top: 4.375rem; /* 70px convertito in rem */
+    right: 1.25rem; /* 20px convertito in rem */
+    width: 90%; /* Larghezza relativa per adattarsi */
+    max-width: 300px; /* Larghezza massima per non essere troppo grande su desktop */
     background-color: var(--Peach);
     border: 2px solid var(--Dark-Coral);
-    border-radius: 8px;
-    box-shadow: 2px 8 px var(--Yankees-Blue);
+    border-radius: 0.5rem; /* 8px convertito in rem */
+    box-shadow: 2px 8px var(--Yankees-Blue);
     z-index: 9999;
-    padding: 16px;
-
+    padding: 1rem; /* 16px convertito in rem */
+    box-sizing: border-box; /* Molto importante per padding + width */
 }
 
-#cart-list{
+#cart-list {
     list-style: none;
-    padding: 0px;
-    margin: 0px;
+    padding: 0;
+    margin: 0;
 }
 
 /* Swiper */
 .card {
-    height: 450px;
+    height: auto; /* Rendi l'altezza automatica per la fluidità del contenuto */
+    min-height: 450px; /* Altezza minima */
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -163,51 +203,105 @@ body{
     background-color: var(--Yankees-Blue);
     border: 2px solid var(--Dark-Coral);
     color: var(--Peach);
-    box-shadow: 0 10px 20px var(--Peach);
+    box-shadow: 0 0.625rem 1.25rem var(--Peach); /* 10px 20px convertito in rem */
     width: 100%;
     max-width: 500px;
     margin: 0 auto;
+    padding: 1rem; /* Aggiunto padding per il contenuto della card */
 }
 
 .swiper-container {
     width: 60%;
     max-width: 1000px;
-    height: 1000px;
+    height: 1000px; /* Mantieni se è l'altezza richiesta da Swiper per inizializzare */
     position: relative;
     margin: 0 auto;
-    padding-bottom: 60px;
+    padding-bottom: 3.75rem; /* 60px convertito in rem */
 }
 
-/* Responsive: tablet */
+/* Responsive: tablet (tra 900px e 601px) */
 @media (max-width: 900px) {
+    html {
+        font-size: 15px; /* Adatta la base rem per tablet */
+    }
+
+    h1 { font-size: 2.8rem; }
+    h2 { font-size: 2rem; }
+    h3 { font-size: 1.5rem; }
+
+    .custom-item .nav-item {
+        font-size: 1.25rem;
+    }
+
     .swiper-container {
         width: 90%;
-        height: 600px;
+        height: 600px; /* Potrebbe essere utile anche qui height: auto; min-height: Xpx; */
         max-width: 100%;
     }
     .card {
-        height: 100%;
+        height: auto; /* Rendi l'altezza automatica */
+        min-height: 350px; /* Imposta una min-height per il tablet */
         max-width: 100%;
-        font-size: 20px;
+        font-size: 1.125rem; /* 20px convertito in rem */
     }
 }
 
-/* Responsive: smartphone */
-@media (max-width: 360px) {
+/* Responsive: smartphone (fino a 600px) */
+@media (max-width: 600px) { /* Modificato da 360px per una copertura più ampia */
+    html {
+        font-size: 14px; /* Base rem per smartphone */
+    }
+
+    h1 { font-size: 2.2rem; }
+    h2 { font-size: 1.8rem; }
+    h3 { font-size: 1.3rem; }
+    h4 { font-size: 1.1rem; }
+    p, .card-back p { font-size: 0.95rem; } /* Testo normale più piccolo */
+
+    .custom-item {
+        flex-direction: column; /* Menu a pila su schermi molto piccoli */
+        gap: 0.5rem;
+    }
+    .custom-item .nav-item {
+        font-size: 1rem;
+        padding: 0.5rem 0; /* Padding verticale */
+        border-bottom: 1px solid rgba(255,255,255,0.1); /* Separatore per link */
+    }
+    .custom-item .nav-item:last-child {
+        border-bottom: none;
+    }
+    /* Potresti considerare un menu hamburger qui per Bootstrap */
+
+    .position {
+        top: -6.25rem; /* -100px in rem, meno aggressivo */
+    }
+
     .swiper-container {
         width: 100%;
         min-height: 400px;
-        height: auto;
-        padding-bottom: 40px;
+        height: auto; /* Auto per altezza */
+        padding-bottom: 2.5rem; /* 40px convertito in rem */
     }
     .card {
-        min-height: 350px;
-        height: auto ;
-        max-width: 20%;
-        font-size: 16px;
-        padding: 10px;
+        min-height: 300px; /* Altezza minima più piccola */
+        height: auto;
+        max-width: 100%; /* Ogni card occupa tutta la larghezza */
+        font-size: 1rem; /* 16px convertito in rem */
+        padding: 0.625rem; /* 10px convertito in rem */
+    }
+
+    /* Regola per i numeri */
+    .number {
+        font-size: 2.5rem; /* Adatta la dimensione dei numeri */
+    }
+
+    .btn-custom, .btn-custom2 {
+        font-size: 1rem;
+        padding: 0.6rem 1.2rem;
+        margin: 0.3rem;
     }
 }
+
 
 .swiper-wrapper {
     align-items: center;
@@ -217,55 +311,57 @@ body{
     position: absolute !important;
     left: 0;
     right: 0;
-    bottom: 10px;
+    bottom: 0.625rem; /* 10px convertito in rem */
     margin: 0 auto;
     text-align: center;
     z-index: 10;
 }
 
 /* Annunci */
-
-.accordion-item, .accordion-button{
+.accordion-item, .accordion-button {
     background-color: var(--Cadet);
     color: var(--Peach);
 }
 
-.accordion-button:not(.collapsed){
+.accordion-button:not(.collapsed) {
     color: var(--Dark-Coral);
     background-color: var(--Cadet);
     box-shadow: none;
 }
 
-.accordion-button:focus{
+.accordion-button:focus {
     box-shadow: none;
 }
-.bs-accordion-btn-active-icon{
+.bs-accordion-btn-active-icon {
     background-color: var(--Dark-Coral);
 }
 
-.cardwrapper{
+.cardwrapper {
     display: flex;
     flex-wrap: wrap;
-    gap: 20px;
+    gap: 1.25rem; /* 20px convertito in rem */
     justify-content: center;
+    padding: 1rem; /* Aggiunto padding al wrapper */
 }
 
 .card-custom {
-    height: 350px;
-    width: 300px;
+    height: auto; /* Rendi l'altezza automatica */
+    min-height: 350px; /* Altezza minima */
+    width: 100%; /* Occupare tutta la larghezza disponibile */
+    max-width: 300px; /* Limite massimo per evitare che siano troppo grandi */
     border: 2px solid var(--Peach);
-    border-radius: 20px;
+    border-radius: 1.25rem; /* 20px convertito in rem */
     display: flex;
     align-items: center;
-    justify-content: center; /* centrato flip container */
-    margin-bottom: 20px; /* sistemato valore mancante */
+    justify-content: center;
+    margin-bottom: 1.25rem; /* 20px convertito in rem */
     background: var(--Yankees-Blue);
     color: var(--Peach);
-    padding: 15px 10px;
+    padding: 0.9375rem 0.625rem; /* 15px 10px convertito in rem */
     box-sizing: border-box;
     overflow: hidden;
-    perspective: 1000px; /* Aggiunto per il flip */
-    cursor: pointer; /* Consigliato per UX */
+    perspective: 1000px;
+    cursor: pointer;
 }
 
 /* Contenitore interno per gestire il flip */
@@ -289,8 +385,8 @@ body{
     width: 100%;
     height: 100%;
     backface-visibility: hidden;
-    border-radius: 20px;
-    padding: 15px 10px;
+    border-radius: 1.25rem; /* 20px convertito in rem */
+    padding: 0.9375rem 0.625rem; /* 15px 10px convertito in rem */
     box-sizing: border-box;
     display: flex;
     flex-direction: column;
@@ -308,6 +404,7 @@ body{
 /* Retro */
 .card-face-back {
     transform: rotateY(180deg);
+    gap: 0.625rem; /* 10px di default per il gap tra elementi */
 }
 
 /* Testo */
@@ -316,13 +413,13 @@ body{
 .card-face-front h4,
 .card-face-front p,
 .card-face-back p {
-    font-size: 18px; 
-    margin: 5px 0 0 0; 
+    font-size: 1.125rem; /* 18px convertito in rem */
+    margin: 0.3125rem 0 0 0; /* 5px convertito in rem */
     text-align: center;
     word-break: break-word;
     line-height: 1.2;
     width: 100%;
-    padding: 0 5px;
+    padding: 0 0.3125rem; /* 5px convertito in rem */
 }
 
 /* Immagine */
@@ -330,17 +427,17 @@ body{
 .card-face-front img {
     width: 100%;
     height: 100%;
-    object-fit: contain; 
-    border-radius: 10px;
+    object-fit: contain;
+    border-radius: 0.625rem; /* 10px convertito in rem */
     margin: 0;
     display: block;
 }
 
-.accordin-custom{
-    margin-top: 100px;
+.accordin-custom {
+    margin-top: 6.25rem; /* 100px convertito in rem */
 }
 
-.dropdown-item{
+.dropdown-item {
     color: var(--Peach);
 }
 
@@ -348,43 +445,16 @@ body{
     color: var(--Dark-Coral);
     background-color: var(--Peach);
 }
-.annunci-body{
-    padding-top: 300px;
-}
 
+.annunci-body {
+    padding-top: 12.5rem; /* 200px convertito in rem, era 300px - potrebbe essere troppo */
+    }
 
 #radiowrapper.accordion-body {
     padding-bottom: 0 !important;
-}
+    }
 
-.card-face-back{
-    display: flex;
-    gap: 25px; /* scegli tu il valore */
-    flex-wrap: wrap; /* opzionale, per andare a capo su schermi piccoli */
-}
-
-
-.btn-custom2{
-    color: var(--Peach);
-    background-color: var(--Yankees-Blue);
-    border: 2px solid var(--Dark-Coral);
-    border-radius: 50px;
-    margin: 0px 15px;
-    transition: 0.5s;
-}
-
-.btn-custom2:not(:last-child) {
-    margin-right: 25px;
-}
-
-.btn-custom2:hover{
-    color: var(--Dark-Coral);
-    background-color: var(--Peach);
-    transform: scale(1.1);
-}
-
-/* chi siamo */
-
+        /* chi siamo */
 .circle {
     height: 300px;
     width: 300px;
@@ -394,24 +464,26 @@ body{
     align-items: center;
     justify-content: center;
     position: relative;
-    font-size: 24px;
+    font-size: 1.5rem; /* 24px convertito in rem */
     text-align: center;
     background: var(--Yankees-Blue);
     color: var(--Peach);
     box-sizing: border-box;
+    padding: 1rem; /* Aggiunto padding per il testo interno */
 }
 
 .vh-75 {
     height: 75vh;
-    min-height: 400px;
+    min-height: 25rem; /* 400px convertito in rem */
     display: flex;
     align-items: center;
     justify-content: center;
+    padding: 1rem; /* Aggiunto padding generale per evitare bordi stretti */
 }
 
 .opener {
-    height: 75px;
-    width: 75px;
+    height: 4.6875rem; /* 75px convertito in rem */
+    width: 4.6875rem; /* 75px convertito in rem */
     border-radius: 50%;
     border: 3px solid var(--Dark-Coral);
     display: flex;
@@ -422,7 +494,7 @@ body{
     background-color: var(--Cadet);
     cursor: pointer;
     transition: 0.5s;
-    font-size: 28px;
+    font-size: 1.75rem; /* 28px convertito in rem */
 }
 
 .fa-plus {
@@ -430,8 +502,8 @@ body{
 }
 
 .moved {
-    height: 75px;
-    width: 75px;
+    height: 4.6875rem; /* 75px convertito in rem */
+    width: 4.6875rem; /* 75px convertito in rem */
     border-radius: 50%;
     border: 2px solid var(--Dark-Coral);
     background-position: center;
@@ -443,18 +515,19 @@ body{
 }
 
 .card-flip {
-    width: 260px;
-    height: 300px;
-    min-height: 200px;
+    width: 16.25rem; /* 260px convertito in rem */
+    height: 18.75rem; /* 300px convertito in rem */
+    min-height: 12.5rem; /* 200px convertito in rem */
     border: 2px solid var(--Peach);
-    border-radius: 20px;
-    box-shadow: 0 4px 30px var(--Dark-Coral);
+    border-radius: 1.25rem; /* 20px convertito in rem */
+    box-shadow: 0 0.25rem 1.875rem var(--Dark-Coral); /* 4px 30px convertito in rem */
     background: none;
     cursor: pointer;
     position: relative;
     display: flex;
     flex-direction: column;
     perspective: 1000px;
+    margin: 0.625rem; /* Aggiunto un margine per le card, per gap extra */
 }
 
 .card-flip-inner {
@@ -469,13 +542,13 @@ body{
 .card-front, .card-back {
     width: 100%;
     height: 100%;
-    min-height: 200px;
+    min-height: 12.5rem; /* 200px convertito in rem */
     position: absolute;
     top: 0;
     left: 0;
     backface-visibility: hidden;
     -webkit-backface-visibility: hidden;
-    border-radius: 20px;
+    border-radius: 1.25rem; /* 20px convertito in rem */
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -483,13 +556,14 @@ body{
     box-sizing: border-box;
     overflow: auto;
     will-change: transform;
-     scrollbar-width: none;
+    scrollbar-width: none;
     -ms-overflow-style: none;
+    padding: 1.25rem; /* Aggiunto padding per il contenuto */
 }
 
 .card-front::-webkit-scrollbar,
 .card-back::-webkit-scrollbar {
-    display: none;              /* Chrome, Safari, Opera */
+    display: none;
 }
 
 .card-front {
@@ -504,219 +578,329 @@ body{
 
 .card-back {
     transform: rotateY(180deg);
-    padding: 20px;
     word-break: break-word;
     overflow-y: auto;
-    display: flex;
-    flex-direction: column;
     justify-content: flex-start;
-    align-items: center;
-    height: 100%;
-    min-height: 200px;
 }
 
 .card-back h3 {
-    margin: 0 0 10px 0;
+    margin: 0 0 0.625rem 0; /* 10px convertito in rem */
     font-size: 1.2em;
     font-weight: bold;
     text-align: center;
 }
 
 .card-back p {
-    margin: 5px 0;
+    margin: 0.3125rem 0; /* 5px convertito in rem */
     font-size: 1em;
     text-align: center;
     word-break: break-word;
     line-height: 1.2;
-    padding: 0 5px;
+    padding: 0 0.3125rem; /* 5px convertito in rem */
 }
 
 .cardWrapper {
-    margin-top: 40px;
+    margin-top: 2.5rem; /* 40px convertito in rem */
     display: flex;
     justify-content: center;
     align-items: flex-start;
     flex-wrap: wrap;
-    gap: 20px;
+    gap: 1.25rem; /* 20px convertito in rem */
 }
 
-/* Responsive: Tablet */
+/* Responsive: Tablet (breakpoint a 900px, 768px, ecc. - aggiunto un breakpoint intermedio) */
 @media (max-width: 900px) {
     .circle {
-        height: 180px;
-        width: 180px;
-        font-size: 16px;
+        height: 15rem; /* 240px */
+        width: 15rem; /* 240px */
+        font-size: 1.25rem; /* 20px */
         border-width: 4px;
     }
     .vh-75 {
         height: auto;
-        min-height: 200px;
-        padding: 20px 0;
+        min-height: 15rem; /* 240px */
+        padding: 1rem 0;
     }
     .opener, .moved {
-        height: 50px;
-        width: 50px;
-        font-size: 16px;
+        height: 3.5rem; /* 56px */
+        width: 3.5rem; /* 56px */
+        font-size: 1.25rem; /* 20px */
         border-width: 2px;
     }
     .card-flip {
-        width: 160px;
-        height: 220px;
-        min-height: 140px;
+        width: 14rem; /* 224px */
+        height: 16rem; /* 256px */
+        min-height: 10rem; /* 160px */
     }
     .card-front, .card-back {
-        min-height: 140px;
-        font-size: 14px;
-        padding: 10px;
+        min-height: 10rem; /* 160px */
+        font-size: 0.9rem; /* 14.4px */
+        padding: 0.8rem;
     }
     .cardWrapper {
-        margin-top: 30px;
-        gap: 12px;
+        margin-top: 1.5rem; /* 24px */
+        gap: 0.75rem; /* 12px */
     }
 }
 
-/* Responsive: Smartphone */
+/* Nuovo breakpoint per tablet più piccoli / schermi orizzontali */
+@media (max-width: 768px) {
+    html {
+        font-size: 13px; /* Adatta la base rem */
+    }
+    h1 { font-size: 2rem; }
+    h2 { font-size: 1.6rem; }
+    h3 { font-size: 1.2rem; }
+    .annunci-body {
+        padding-top: 8rem; /* Riduci ulteriormente il padding */
+    }
+}
+
+
+/* Responsive: Smartphone (Breakpoint a 600px - la tua era 360px per swiper) */
 @media (max-width: 600px) {
+    html {
+        font-size: 12px; /* Base rem per smartphone più piccoli */
+    }
+
+    h1 { font-size: 1.8rem; }
+    h2 { font-size: 1.4rem; }
+    h3 { font-size: 1.1rem; }
+    h4 { font-size: 1rem; }
+    body, p, .card-back p { font-size: 0.875rem; } /* Testo generale più piccolo */
+
     .circle {
-        height: 110px;
-        width: 110px;
-        font-size: 13px;
+        height: 8rem; /* 128px */
+        width: 8rem; /* 128px */
+        font-size: 0.9rem; /* 14.4px */
         border-width: 3px;
-        padding: 3px;
+        padding: 0.5rem;
     }
     .vh-75 {
-        height: auto;
-        min-height: 100px;
-        padding: 10px 0;
+        min-height: 8rem; /* 128px */
+        padding: 0.5rem 0;
     }
     .opener, .moved {
-        height: 32px;
-        width: 32px;
-        font-size: 11px;
+        height: 2.5rem; /* 40px */
+        width: 2.5rem; /* 40px */
+        font-size: 0.9rem; /* 14.4px */
         border-width: 2px;
     }
     .card-flip {
-        width: 95vw;          
-        max-width: 340px;      
-        height: 210px;      
-        min-height: 120px;
-        margin: 0 auto;
+        width: 90vw; /* Usa view width per adattarsi meglio */
+        max-width: 20rem; /* Limite per non essere troppo grandi */
+        height: auto; /* Altezza automatica */
+        min-height: 10rem; /* 160px */
+        margin: 0.5rem auto; /* Centra le card */
     }
     .card-front, .card-back {
-        min-height: 120px;     
-        font-size: 16px;    
-        padding: 12px;
+        min-height: 10rem; /* 160px */
+        font-size: 0.9rem; /* 14.4px */
+        padding: 0.8rem;
     }
     .cardWrapper {
-        margin-top: 18px;
-        gap: 8px;
+        margin-top: 1rem; /* 16px */
+        gap: 0.5rem; /* 8px */
+    }
+
+    .swiper-container {
+        width: 95%; /* Leggermente più piccola per il padding ai bordi */
+        min-height: 300px; /* Min height per swiper */
+        padding-bottom: 2rem; /* 32px */
+    }
+    .card {
+        min-height: 250px; /* Min height per le card swiper */
     }
 }
 
+/* Potenziale breakpoint per schermi ultra-piccoli, es. 320px */
+@media (max-width: 375px) {
+    html {
+        font-size: 11px; /* Base rem più piccola per schermi minuscoli */
+    }
+    h1 { font-size: 1.5rem; }
+    h2 { font-size: 1.2rem; }
+    p, .card-back p { font-size: 0.8rem; }
+
+    .swiper-container {
+        min-height: 250px;
+    }
+    .card {
+        min-height: 200px;
+    }
+    .circle {
+        height: 6rem;
+        width: 6rem;
+        font-size: 0.8rem;
+    }
+    .opener, .moved {
+        height: 2rem;
+        width: 2rem;
+        font-size: 0.8rem;
+    }
+    .card-flip {
+        min-height: 8rem;
+    }
+    .card-front, .card-back {
+        min-height: 8rem;
+    }
+}
+
+
+/* Footer */
 .footer {
-  background-color: var(--Yankees-Blue);
-  color: var(--Peach);
-  padding: 3rem 1rem 2rem;
-  font-family: 'Segoe UI', sans-serif;
+    background-color: var(--Yankees-Blue);
+    color: var(--Peach);
+    padding: 3rem 1rem 2rem;
+    font-family: 'Segoe UI', sans-serif;
+    line-height: 1.5; /* Migliora la leggibilità del testo */
 }
 
 .footer-container {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-between;
-  gap: 3rem;
-  max-width: 1200px;
-  margin: auto;
-  padding-bottom: 2rem;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    gap: 2rem; /* Ridotto il gap per schermi più piccoli */
+    max-width: 1200px;
+    margin: auto;
+    padding-bottom: 2rem;
+}
+
+.footer-column {
+    flex: 1 1 250px; /* Base width di 250px, permette di andare a capo */
+    min-width: 150px; /* Larghezza minima per le colonne */
+    padding: 0.5rem;
+    text-align: center; /* Centra il testo per mobile */
+}
+
+@media (min-width: 768px) { /* Sui desktop, allinea a sinistra le colonne */
+    .footer-column {
+        text-align: left;
+    }
 }
 
 .footer-column h3 {
-  color: var(--Dark-Coral);
-  margin-bottom: 0.7rem;
-  font-size: 1.1rem;
+    color: var(--Dark-Coral);
+    margin-bottom: 0.7rem;
+    font-size: 1.2rem; /* Aumentato leggermente per chiarezza */
 }
 
 .footer-column ul {
-  list-style: none;
-  padding: 0;
-  margin: 0;
+    list-style: none;
+    padding: 0;
+    margin: 0;
 }
 
 .footer-column ul li {
-  margin-bottom: 0.4rem;
+    margin-bottom: 0.4rem;
 }
 
 .footer-column a {
-  color: var(--Peach);
-  text-decoration: none;
-  transition: color 0.3s ease;
+    color: var(--Peach);
+    text-decoration: none;
+    transition: color 0.3s ease;
 }
 
 .footer-column a:hover {
-  color: var(--Dark-Coral);
+    color: var(--Dark-Coral);
 }
 
 .footer-title {
-  font-size: 1.8rem;
-  color: var(--Dark-Coral);
-  margin-bottom: 0.3rem;
+    font-size: 2rem; /* Leggermente aumentato */
+    color: var(--Dark-Coral);
+    margin-bottom: 0.5rem;
 }
 
 .footer-subtitle {
-  font-size: 0.95rem;
-  color: var(--Cadet);
+    font-size: 1rem; /* Leggermente aumentato */
+    color: var(--Cadet);
 }
 
 .footer-divider {
-  border-top: 1px solid var(--Cadet);
-  margin: 2rem auto;
-  max-width: 1100px;
+    border-top: 1px solid var(--Cadet);
+    margin: 2rem auto;
+    max-width: 1100px;
 }
 
 .footer-bottom {
-  text-align: center;
-  font-size: 0.85rem;
-  color: var(--Cadet);
-  line-height: 1.6;
+    text-align: center;
+    font-size: 0.9rem; /* Leggermente aumentato */
+    color: var(--Cadet);
+    line-height: 1.6;
 }
 
 .footer-credit span {
-  color: var(--Peach);
-  font-weight: bold;
-  transition: color 0.3s ease;
+    color: var(--Peach);
+    font-weight: bold;
+    transition: color 0.3s ease;
 }
 
 .footer-credit span:hover {
-  color: var(--Dark-Coral);
+    color: var(--Dark-Coral);
 }
 
 /* Carrello */
 .body-carrello {
-            background: linear-gradient(135deg, var(--Yankees-Blue), var(--Cadet));
-            min-height: 100vh;
-            color: var(--Peach);
-        }
-        .coming-container {
-            background: var(--Yankees-Blue);
-            border-radius: 1rem;
-            box-shadow: 0 4px 24px rgba(0,0,0,0.18);
-            border: 2px solid var(--Dark-Coral);
-            padding: 3rem 2rem;
-            text-align: center;
-            margin-top: 250px;
-        }
-        .sun {
-            font-size: 4rem;
-            color: var(--Peach);
-            text-shadow: 2px 2px 8px var(--Dark-Coral);
-            margin-bottom: 1rem;
-        }
-        .h1-carrello {
-            color: var(--Dark-Coral);
-            letter-spacing: 2px;
-            margin-bottom: 1rem;
-        }
-        .p-carrello {
-            color: var(--Peach);
-            font-size: 1.2rem;
-        }
+    background: linear-gradient(135deg, var(--Yankees-Blue), var(--Cadet));
+    min-height: 100vh;
+    color: var(--Peach);
+    display: flex; /* Utilizza flexbox per centrare il contenuto */
+    align-items: center;
+    justify-content: center;
+    padding: 1rem; /* Aggiungi padding generale */
+}
+.coming-container {
+    background: var(--Yankees-Blue);
+    border-radius: 1rem;
+    box-shadow: 0 4px 24px rgba(0,0,0,0.18);
+    border: 2px solid var(--Dark-Coral);
+    padding: 3rem 2rem;
+    text-align: center;
+    margin-top: 0; /* Rimuovi margin-top fisso se centrato con flexbox */
+    max-width: 600px; /* Limita la larghezza su schermi grandi */
+    width: 95%; /* Larghezza fluida */
+}
+.sun {
+    font-size: 4rem;
+    color: var(--Peach);
+    text-shadow: 2px 2px 8px var(--Dark-Coral);
+    margin-bottom: 1rem;
+}
+.h1-carrello {
+    color: var(--Dark-Coral);
+    letter-spacing: 2px;
+    margin-bottom: 1rem;
+    font-size: 2.5rem; /* Rendi il titolo reattivo */
+}
+.p-carrello {
+    color: var(--Peach);
+    font-size: 1.2rem;
+}
+
+/* Media query specifiche per la pagina carrello */
+@media (max-width: 768px) {
+    .h1-carrello {
+        font-size: 2rem;
+    }
+    .p-carrello {
+        font-size: 1rem;
+    }
+    .sun {
+        font-size: 3rem;
+    }
+}
+
+@media (max-width: 480px) {
+    .coming-container {
+        padding: 2rem 1rem;
+    }
+    .h1-carrello {
+        font-size: 1.5rem;
+    }
+    .p-carrello {
+        font-size: 0.9rem;
+    }
+    .sun {
+        font-size: 2.5rem;
+    }
+}

@@ -1,27 +1,28 @@
+document.addEventListener("DOMContentLoaded", () => {
 let navbar = document.querySelector("#navbar");
 let katana = document.querySelector(`#katana`);
-let chek = false
+let chek = false;
 
-window.addEventListener(`scroll`, ()=>{
+window.addEventListener(`scroll`, () => {
     let scrolled = window.scrollY;
-    if(scrolled > 0){
+    if (scrolled > 0) {
         navbar.classList.remove(`bg-cadet`);
         navbar.classList.add(`bg-peach`);
-    }else{
+    } else {
         navbar.classList.remove(`bg-peach`);
-        navbar.classList.add(`bg-cadet`)
+        navbar.classList.add(`bg-cadet`);
     }
-} );
+});
 
-katana.addEventListener(`click`, ()=>{
-    if(chek == false){
-        katana.style.transform = (`rotate(-90deg)`)
-        chek = true
-    }else{
-        katana.style.transform = (`rotate(0deg)`)
-        chek = false
+katana.addEventListener(`click`, () => {
+    if (chek == false) {
+        katana.style.transform = (`rotate(-90deg)`);
+        chek = true;
+    } else {
+        katana.style.transform = (`rotate(0deg)`);
+        chek = false;
     }
-})
+});
 
 let first = document.querySelector(`#first-number`);
 let second = document.querySelector(`#second-number`);
